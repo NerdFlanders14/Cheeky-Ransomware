@@ -8,7 +8,7 @@ from cryptography.fernet import Fernet
 files = []
 
 for file in os.listdir():
-	if file == "poggers.py" or file == "theKey.key" or file == "unpoggers.py":
+	if file == "poggers.py" or file == "theKey.key" or file == "unpoggers.py" or file == "savedByTheBell.txt":
 		continue
 	if os.path.isfile(file):
 		files.append(file)
@@ -30,3 +30,5 @@ for file in files:
 
 
 print("You just got untrolled")
+f = open("savedByTheBell.txt", "w")
+f.write("Well done for saving your files.")
